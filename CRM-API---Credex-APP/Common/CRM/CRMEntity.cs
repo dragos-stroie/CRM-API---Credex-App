@@ -145,7 +145,8 @@ namespace CRM_API___Credex.Common.CRM
                             rEntity.Attributes.Add(property.GetCustomAttribute<MappedFieldAttribute>().Name, property.GetValue(this));
                         }
 
-                    }                   
+                    };
+                    rEntity.Attributes.Add("sd_source", 4);
                     break;
                 //case TipActiune.Update:
                 //    rEntity.Id = (Guid)this.guidCRM;
