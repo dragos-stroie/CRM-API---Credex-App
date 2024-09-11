@@ -188,6 +188,7 @@
     <Compile Include="Common\CRM\CRMConnecter.cs" />
     <Compile Include="Common\CRM\CRMEntity.cs" />
     <Compile Include="Common\CRM\Custom Attributes.cs" />
+    <Compile Include="Common\CRM\JsonContent.cs" />
     <Compile Include="Controlers\ContractController.cs" />
     <Compile Include="Controlers\TicketController.cs" />
     <Compile Include="Filters\BasicAuthenticationAttribute.cs" />

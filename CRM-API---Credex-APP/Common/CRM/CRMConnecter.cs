@@ -80,8 +80,8 @@ namespace CRM_API___Credex.Common.CRM
             */
             IOrganizationService service = null;
 
-            CrmServiceClient svc = new CrmServiceClient($@"AuthType=ClientSecret;url=https://credexifn-uat.crm4.dynamics.com;ClientId=0d7d770d-8431-49eb-b8aa-bcc453293d67;ClientSecret=a9K8Q~G69y1CQFOUCdBopq6PT8OtiHB.gIWdcaq6");
-            //CrmServiceClient svc = new CrmServiceClient($@"AuthType=ClientSecret;url=https://credex-ifn.crm4.dynamics.com;ClientId=0d7d770d-8431-49eb-b8aa-bcc453293d67;ClientSecret=a9K8Q~G69y1CQFOUCdBopq6PT8OtiHB.gIWdcaq6");
+            CrmServiceClient svc = new CrmServiceClient($@"AuthType=ClientSecret;url=https://credexifn-uat.crm4.dynamics.com;ClientId=0d7d770d-8431-49eb-b8aa-bcc453293d67;ClientSecret=MNS8Q~UjRCbILupPUm9EG7L1gH~fHSvt4o2~eb0L");
+            //CrmServiceClient svc = new CrmServiceClient($@"AuthType=ClientSecret;url=https://credex-ifn.crm4.dynamics.com;ClientId=0d7d770d-8431-49eb-b8aa-bcc453293d67;ClientSecret=MNS8Q~UjRCbILupPUm9EG7L1gH~fHSvt4o2~eb0L");
             if (svc.IsReady)
             {
                 if (svc.OrganizationServiceProxy != null)

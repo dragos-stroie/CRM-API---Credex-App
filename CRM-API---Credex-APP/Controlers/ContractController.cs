@@ -1,4 +1,5 @@
 ﻿using CRM_API___Credex.Common.CRM;
+using CRM_API___Credex.Common;
 using CRM_API___Credex.Filters;
 using CRM_API___Credex.Models;
 using Microsoft.Xrm.Sdk;
@@ -8,6 +9,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http.Results;
 
 namespace CRM_API___Credex.Controlers
 {
@@ -54,7 +58,12 @@ namespace CRM_API___Credex.Controlers
                     {
                         lTickets.Add(new Ticket_Get(entity1));
                     }
-                    return Content(System.Net.HttpStatusCode.OK, JsonConvert.SerializeObject(lTickets));
+                    //return Content(System.Net.HttpStatusCode.OK, JsonConvert.SerializeObject(lTickets)); // with escape JSON response
+                    return (IHttpActionResult)new ResponseMessageResult(new HttpResponseMessage(HttpStatusCode.OK)
+                    {
+                        Content = (HttpContent)new JsonContent(JsonConvert.SerializeObject((object)lTickets, Formatting.Indented))
+
+                    });
                 }
             }
                 
