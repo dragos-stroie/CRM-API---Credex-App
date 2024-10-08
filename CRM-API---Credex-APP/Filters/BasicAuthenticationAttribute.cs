@@ -27,7 +27,7 @@ namespace CRM_API___Credex.Filters
                 var password = usernamePasswordArray[1];
 
                 // Replace this with your own system of security / means of validating credentials
-                var isValid = userName == "MobileAppIntegration" && password == "32DRqI2u5qeA3pUFLEZb";
+                var isValid = userName == "MobileAppIntegration" && password == "43DRqJ2u5qeA3pUADSZb";
 
                 if (isValid)
                 {
